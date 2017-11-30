@@ -1,0 +1,67 @@
+
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/splash/sticker.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <h1 align="center" ><font size="+3.5">Thomas Storyline</font></h1>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-slides pager>
+
+  <ion-slide>
+    <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button color="primary" (click)="nextPage();">Skip</button>
+        </ion-buttons>
+      </ion-toolbar>
+    <img src="assets/imgs/first_slide.jpg" style="width:400px;height:500px;"><br><br><br><br>
+  </ion-slide>
+
+  <ion-slide>
+        <ion-toolbar blackcolor="white">
+        <ion-buttons end>
+          <button ion-button color="primary" (click)="nextPage();">Skip</button>
+        </ion-buttons>
+      </ion-toolbar>
+    <img src="assets/imgs/junkfood_slide.jpg" style="width:400px;height:500px;"><br><br><br><br>
+  </ion-slide>
+
+  <ion-slide>
+        <ion-toolbar blackcolor="white">
+        <ion-buttons end>
+          <button ion-button color="primary" (click)="nextPage();">Skip</button>
+        </ion-buttons>
+      </ion-toolbar>
+    <img src="assets/imgs/second_slide.jpg" style="width:400px;height:500px;"><br><br><br><br>
+  </ion-slide>
+
+  <ion-slide>
+            <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button color="primary" (click)="nextPage();">Skip</button>
+        </ion-buttons>
+      </ion-toolbar>
+    <img src="assets/imgs/third_slide.jpg" style="width:400px;height:500px;"><br><br><br><br>
+  </ion-slide>
+    <ion-slide>
+  
+      <img src="assets/imgs/ready.jpg" class="slide-image"/>
+      <h2 class="slide-title">Ready to Play?</h2>
+      <button ion-button large clear icon-end color="primary" (click)="nextPage();" >
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+</ion-slides>
+</ion-content>

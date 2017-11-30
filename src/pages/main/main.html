@@ -1,0 +1,110 @@
+<ion-header>
+ 
+    <ion-title align="center">
+      <ion-item><h2 align="center" ><font size="+2"><b>Stay Healthy with Thomas!</b></font></h2></ion-item>
+      
+    </ion-title>
+  <style>
+  .backgroundpic
+  {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .statspic
+  {
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+  }
+  </style> 
+</ion-header>
+
+<ion-content padding>
+<table align="center">
+  <tr>
+    <td>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="assets/imgs/heart.jpg" style="width:50px;height:50px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    </td>
+    <td>
+
+       <img src="assets/imgs/{{bmistatus}}.jpg" style="width:200px;height:50px;">
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </td>
+    <td>
+&nbsp;
+       <img src="assets/imgs/info-button.png" style="width:45px;height:45px;" (click)="help()">         
+    </td>
+  </tr>
+  <tr>
+
+       <td>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="assets/imgs/energy.jpg" style="width:50px;height:50px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    </td>
+    <td>
+
+       <img src="assets/imgs/{{health}}.jpg" style="width:200px;height:50px;">
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </td>
+    <td>
+     
+    </td>
+
+  </tr>
+
+</table>
+
+<br>
+
+<table >
+  <tr>
+    <td rowspan="2"><img src="assets/imgs/{{thomas}}.jpg" style="width:350px;height:500px;"  (press)="checkStats()" class="backgroundpic">
+    </td>
+    <td> &nbsp; </td>
+  </tr>
+<tr><td></td><td valign="bottom">
+
+<img src="assets/imgs/st2.png" style="width:75px;height:75px;" (click)="goToStats();" class="statspic">
+</td></tr>
+</table>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+
+<!--       <button ion-button color="primary" round (click)="goToEat();">
+        Let's Eat &nbsp;
+        <ion-icon name="ios-restaurant" ></ion-icon>
+      </button> 
+
+      <button ion-button color="primary" round (click)="goToExercise();"> 
+        Let's EXERCISE &nbsp;
+        <ion-icon name="ios-walk"></ion-icon>
+      </button> -->
+  <table  >
+
+    <tr>
+        <td rowspan="2" align="center"><button ion-button color="primary" block (click)="goToEat();" style="height:70px;">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="+2">Let's <br> Eat </font>&nbsp;&nbsp;&nbsp;
+        <h1><ion-icon name="ios-restaurant"></ion-icon></h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </button> </td><td><p>&nbsp;</p></td>
+
+
+      <td align="center" ><button ion-button color="primary" block (click)="goToExercise();" style="height:70px;"> 
+        &nbsp;&nbsp;&nbsp;<font size="+2" >Let's <br> EXERCISE </font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <h1><ion-icon name="ios-walk"></ion-icon></h1>
+      </button></td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+
+
+  </tr>
+  </table>
+</ion-toolbar>
+</ion-footer>

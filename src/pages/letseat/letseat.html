@@ -1,0 +1,93 @@
+<!--
+  Generated template for the LetseatPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<!-- <ion-header>
+
+
+	<h2 align="center">Let's Eat!
+		<button ion-button small (click)="dismiss()" item-right ion-button color="danger" align="right">Exit</button>
+	</h2>
+
+
+</ion-header> -->
+<!-- 
+   <ion-item padding>
+   	  <h1 align="center">   Help	</h1>
+
+	    <button ion-button icon-only small (click)="dismiss()" item-right>
+      		<ion-icon name="close" ></ion-icon>
+    	</button>
+</ion-item> -->
+
+<ion-header>
+
+	<ion-title>
+	<table >
+	  <tr>
+	    <th align="right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font size="+3">Let's Eat! </font> </th>
+	    <td align="right"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	      <button ion-button icon-only large (click)="dismiss()" item-right>
+	          <ion-icon name="close" ></ion-icon>
+	      </button>      
+	    </td>
+	</tr>
+	</table>		
+<!-- 		<h1 align="center">   Help	</h1>
+	    <button ion-button icon-only large (click)="dismiss()" item-right>
+      		<ion-icon name="close" ></ion-icon>
+    	</button>	 -->	
+	</ion-title>
+
+</ion-header>
+
+<ion-content padding>
+
+	<ion-list>
+<!-- 		<ion-item padding>
+	   	  <h1 align="center">    Let's Eat!   	</h1>
+
+		    <button ion-button icon-only small (click)="dismiss()" item-right>
+	      		<ion-icon name="close" ></ion-icon>
+	    	</button>
+		</ion-item> -->
+		<img src="assets/imgs/choosemeal.png" style="width:380px;height:180px;" >
+
+		<h4 align="center"><u>Choose a meal for Thomas!</u></h4>
+
+
+<!-- 		<ion-item  align="left">
+		    <button item-left (click)="presentConfirmA();">
+	      		<img src="assets/imgs/seta.png" style="width:130px;height:150px;" >
+	    	</button>
+
+		    <button item-right (click)="presentConfirmB();">
+	      		<img src="assets/imgs/setb.png" style="width:250px;height:150px;" >
+	    	</button>
+		</ion-item> -->
+	<ion-card *ngFor="let img of imgs" (click)="presentConfirmSet(img)">
+      <ion-card-header>
+        <h1 align="center"><b>Set {{img}}</b></h1>
+      </ion-card-header>		
+	  <button ion-item >
+	    <p align="center"><img src="assets/imgs/set{{img}}woframe.png" style="width:200px;height:170px;"></p>
+	  </button>		
+	</ion-card>
+	</ion-list>
+
+</ion-content>
+
+<!-- <ion-footer>
+  <ion-toolbar>
+
+
+      <button ion-button large block (click)="presentConfirmSet(selected);"> Confirm Set( {{selected}} )
+      </button>
+           
+  </ion-toolbar>
+</ion-footer>
+ -->

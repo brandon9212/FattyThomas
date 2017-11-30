@@ -1,0 +1,70 @@
+<ion-header>
+
+  <ion-title>
+  <table >
+    <tr>
+      <th align="right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font size="+2">Track Calories </font> </th>
+      <td align="right"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button ion-button icon-only large (click)="main()" item-right>
+            <ion-icon name="close" ></ion-icon>
+        </button>      
+      </td>
+  </tr>
+  </table>    
+<!--    <h1 align="center">   Help  </h1>
+      <button ion-button icon-only large (click)="dismiss()" item-right>
+          <ion-icon name="close" ></ion-icon>
+      </button>  -->  
+  </ion-title>
+
+</ion-header>
+<ion-content>
+    <ion-list>
+<!--     <ion-item padding>
+        <h1 align="center">        </h1>
+
+        <button ion-button icon-only small (click)="main()" item-right>
+            <ion-icon name="close" ></ion-icon>
+        </button>
+    </ion-item> -->
+    <ion-card>
+      <ion-card-header>
+        <h2 align="center">Calories Burn-out Chart</h2>
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #lineCanvasIPOP></canvas>
+        <br>
+
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <h2 align="center">Final Calories Consumed Chart</h2>
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #lineCanvasComputed></canvas>
+        <br>
+        <p align="center">Final Calories = Calories Input - Calories Output</p>
+        <br>
+        <p align="center"><button ion-button (click)="moredetails();" >Show total Calories consumed</button></p>  
+        
+
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+<!--       <ion-card-header>
+        <h5 align="center"><u>TIPS</u></h5>
+      </ion-card-header> -->
+      <ion-card-content>
+        <h3><u><b>TIPS</b></u></h3>
+       <p>(1) To lose a pound, you must burn 3,500 more calories than he consumes in week. <br>(2) 60 or more minutes of daily exercise can boost caloric burn to a level that leads to weight loss</p>   
+
+      </ion-card-content>
+    </ion-card>    
+    
+  </ion-list>
+
+
+</ion-content>

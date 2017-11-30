@@ -1,0 +1,88 @@
+<!--
+  Generated template for the DetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title align="center"> Nutrition in Meals</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h3 align="center" ></h3>
+
+<!--     <ion-card>
+      <ion-card-header>
+        Bar Chart
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #barCanvas></canvas>
+      </ion-card-content>
+    </ion-card> -->
+ 
+    <ion-card>
+      <ion-card-header>
+        <h1 align="center">Nutrition in Set A</h1>
+      </ion-card-header>
+      <ion-card-content >
+        <p align="center">
+          <img src="assets/imgs/setAwoframe.png" style="width:130px;height:120px;">
+        </p>
+        <br>
+        <p align="center">
+          TOTAL CALORIES: 1000kcal
+        </p>
+        <canvas #doughnutCanvasA></canvas>
+        <p align="center">
+          Represented in grams(g)
+        </p>         
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <h1 align="center">Nutrition in Set B</h1>
+      </ion-card-header>
+      <ion-card-content>
+        <p align="center">
+          <img src="assets/imgs/setBwoframe.png" style="width:150px;height:120px;">
+        </p>
+        <br>
+        <p align="center">
+          TOTAL CALORIES: 600kcal
+        </p>                
+        <canvas #doughnutCanvasB>
+          
+        </canvas>
+        <p align="center">
+          Represented  in grams(g)
+        </p>          
+      </ion-card-content>
+    </ion-card> 
+<!--     <ion-card>
+      <ion-card-header>
+        Line Chart
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #lineCanvas></canvas>
+      </ion-card-content>
+    </ion-card> -->
+    
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+
+      <button ion-button large block (click)="returnMain();"> Return Home
+      </button>
+
+           
+  </ion-toolbar>
+</ion-footer>
