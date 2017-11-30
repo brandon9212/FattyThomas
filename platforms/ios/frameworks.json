@@ -1,0 +1,9 @@
+{
+    "AudioToolbox.framework": 2,
+    "WebKit.framework": 1,
+    "libz.tbd": 1,
+    "Foundation.framework": 1,
+    "AVFoundation.framework": 1,
+    "MediaPlayer.framework": 1,
+    "CoreMotion.framework": 1
+}
